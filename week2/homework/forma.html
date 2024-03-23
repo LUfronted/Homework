@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Опросник для владельцев животных</title>
+</head>
+<body>
+    <h1>Опросник для владельцев животных</h1>
+    <form action="#" method="post">
+        <label for="pet-name">Кличка животного:</label>
+            <input type="text" id="pet-name" name="pet-name">
+        <br>
+        <label for="pet-type">Вид животного:</label>
+            <select id="pet-type" name="pet-type">
+                <option value="">Выберите</option>
+                <option value="dog">Собака</option>
+                <option value="cat">Кошка</option>
+                <option value="rodents">Грызуны</option>
+                <option value="bird">Птица</option>
+                <option value="fish">Рыба</option>
+                <option value="other">Другое</option>
+            </select>
+        <br>
+        <label for="pet-breed">Порода (при наличии):</label>
+        <input type="text" id="pet-breed" name="pet-breed">
+        <br>
+        <label for="pet-age">Возраст:</label>
+            <input type="number" id="pet-age" name="pet-age" min="0" max="30">
+        <br>
+        <div>
+            <label>Пол:</label>
+            <input type="radio" id="pet-gender-male" name="pet-gender" value="male" required>
+            <label for="pet-gender-male">Мужской</label>
+            <input type="radio" id="pet-gender-female" name="pet-gender" value="female" required>
+            <label for="pet-gender-female">Женский</label>
+        </div>
+        <br>
+        <div>
+            <label for="avatar">Фото питомца</label>
+            <input type="file" id="avatar" name="avatar">
+        </div>
+        <br>
+        <label for="owner-name">Имя владельца:</label>
+            <input type="text" id="owner-name" name="owner-name">
+        <br>
+        <label for="owner-phone">Номер телефона:</label>
+            <input type="tel" id="owner-phone" name="owner-phone" pattern="+7 (xxx) xxx-xx-xx">
+        <br>
+        <label for="comment">Комментарии владельца</label>
+            <textarea name="comment" id="comment" cols="30" rows="3"></textarea>
+        <br>
+        <input type="submit" value="Отправить">
+    </form>
+</body>
+</html>
